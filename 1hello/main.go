@@ -5,7 +5,8 @@ import (
 	"strings"
 )
 
-func hello(name string) string {
+// Hello returns greeting for passed username.
+func Hello(name string) string {
 	if name == "" {
 		// set default value
 		name = "World"
@@ -18,6 +19,6 @@ func hello(name string) string {
 }
 
 func main() {
-	fmt.Printf(hello("user"))
-	fmt.Printf(hello(""))
+	fmt.Printf(Hello("user"))
+	fmt.Printf(Hello(""))
 }
