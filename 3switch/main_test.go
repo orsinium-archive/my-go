@@ -27,3 +27,9 @@ func TestFizzBazz(t *testing.T) {
 		t.Errorf("\ngot:\n'%s'\nwant\n'%s'", got, want)
 	}
 }
+
+func BenchmarkFizzBazz(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		FizzBazz(i)
+	}
+}
