@@ -7,10 +7,10 @@ import (
 )
 
 func TestFizzBazz(t *testing.T) {
-	assert.Equal(t, FizzBazz(1), "1")
-	assert.Equal(t, FizzBazz(3), "Fizz")
-	assert.Equal(t, FizzBazz(5), "Bazz")
-	assert.Equal(t, FizzBazz(15), "FizzBazz")
+	assert.Equal(t, "1", FizzBazz(1), "test number")
+	assert.Equal(t, "Fizz", FizzBazz(3), "test fizz")
+	assert.Equal(t, "Bazz", FizzBazz(5), "test buzz")
+	assert.Equal(t, "FizzBazz", FizzBazz(15), "test fizz-bazz")
 }
 
 func BenchmarkFizzBazz(b *testing.B) {
