@@ -14,5 +14,7 @@ func types() {
 
 	e := []int{1, 2, 3} // array
 
-	fmt.Printf("%s %d %f %d %d", a, b, c, d[0], e[0])
+	var f []int // array
+
+	fmt.Printf("%s %d %f %d %d %d", a, b, c, d[0], e[0], f)
 }
